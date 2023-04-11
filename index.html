@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0 user-scalable=no"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="estilo.css" />
+    <title>RPonceSeguros</title>
+  </head>
+
+  <body>
+    <!-- SECCION I N I C I O -->
+    <section id="inicio">
+      <div class="contenido">
+        <header>
+          <div class="contenido-header">
+            <h1>/RP/</h1>
+            <nav id="nav" class="">
+              <ul id="links">
+                <li>
+                  <a
+                    href="#inicio"
+                    class="seleccionado"
+                    onclick="seleccionar(this)"
+                    >INICIO</a
+                  >
+                </li>
+                <!-- <li>
+                  <a href="#sobremi" onclick="seleccionar(this)"
+                    >¿QUIÉNES SOMOS?</a
+                  >
+                </li> -->
+                <li>
+                  <a href="#servicios" onclick="seleccionar(this)">SEGUROS</a>
+                </li>
+                <li>
+                  <a href="#portfolio" onclick="seleccionar(this)">COMPAÑIAS</a>
+                </li>
+                <li>
+                  <a href="#poliza" onclick="seleccionar(this)"
+                    >PEDIR POLIZA</a
+                  >
+                </li>
+                <li>
+                  <a href="#contacto" onclick="seleccionar(this)">CONTACTO</a>
+                </li>
+              </ul>
+            </nav>
+
+            <!-- Icono del menu responsive -->
+            <div id="icono-nav" onclick="responsiveMenu()">
+              <i class="fa-solid fa-bars"></i>
+            </div>
+
+            <!-- <div class="redes">
+              <a href="#"><i class="fa-brands fa-youtube"></i></a>
+              <a href="#"><i class="fa-brands fa-facebook"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram-square"></i></a>
+            </div> -->
+          </div>
+        </header>
+        <div class="presentacion">
+          <p class="bienvenida">Bienvenidos</p>
+          <h2> Raul A. Ponce</h2>
+          <p class="descripcion1">Productor Asesor de Seguros</p>
+          <p class="descripcion">Todos tus seguros en un mismo lugar</p>
+          <a href="#servicios">Pedi tu cotización</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECCION S O B R E M I -->
+    <!-- <section id="sobremi">
+      <div class="contenedor-foto">
+        <img src="img/foto.jpg" alt="" />
+      </div>
+      <div class="sobremi">
+        <p class="titulo-seccion">Sobre Mi</p>
+        <h2>Hola, Soy <span>Lucas Perez</span></h2>
+        <h3>Desarrollador Web</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consectetur
+          reprehenderit voluptatibus blanditiis nulla adipisci iste fuga
+          expedita, ea exercitationem dicta, similique rem, atque soluta
+          recusandae ipsam autem. Sapiente, quo ducimus?
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro nam a
+          beatae natus.
+        </p>
+        <a href="#">Descargar CV</a>
+      </div>
+    </section> -->
+
+    <!-- SECCION PORTAFOLIO -->
+    <section id="portfolio">
+      <h3 class="titulo-seccion">Compañias</h3>
+      <div class="fila">
+        <div class="proyecto">
+          <div class="overlay"></div>
+          <img src="img/seguros3.jpg" alt="" />
+          <div class="info">
+            <h4>Seguros Rivadavia</h4>
+          </div>
+        </div>
+        <div class="proyecto">
+          <div class="overlay"></div>
+          <img src="img/seguros1.jpg" alt="" />
+          <div class="info">
+            <h4>San Cristóbal Seguros</h4>
+          </div>
+        </div>
+        <div class="proyecto">
+          <div class="overlay"></div>
+          <img src="img/seguros2.png" alt="" />
+          <div class="info">
+            <h4>La Perseverancia Seguros</h4>
+          </div>
+        </div>
+      
+        
+      </div>
+      <div class="fila">
+        <div class="proyecto">
+          <div class="overlay"></div>
+          <img src="img/seguro4.jpg" alt="" />
+          <div class="info">
+            <h4>Mercantil Andina</h4>
+          </div>
+        </div>
+        <div class="proyecto">
+          <div class="overlay"></div>
+          <img src="img/seguros5.jpg" alt="" />
+          <div class="info">
+            <h4>SMG Seguros</h4>
+          </div>
+        </div>
+        <div class="proyecto">
+          <div class="overlay"></div>
+          <img src="img/seguros6.png" alt="" />
+          <div class="info">
+            <h4>Experta Seguros</h4>
+          </div>
+        </div>
+      </div>
+      
+      </div>
+    </section>
+
+    <!-- SECCION H A B I L I D A D E S -->
+    <!-- <div class="contenedor-skills" id="skills">
+      <h3>HABILIDADES</h3>
+      <div class="skill">
+        <div class="info">
+          <p><span class="lista"> </span>Html & Css</p>
+          <span class="porcentaje">95%</span>
+        </div>
+
+        <div class="barra">
+          <div class="" id="html"></div>
+        </div>
+      </div>
+      <div class="skill">
+        <div class="info">
+          <p><span class="lista"> </span>Javascript</p>
+          <span class="porcentaje">90%</span>
+        </div>
+
+        <div class="barra">
+          <div class="" id="js"></div>
+        </div>
+      </div>
+      <div class="skill">
+        <div class="info">
+          <p><span class="lista"> </span>Bases de Datos</p>
+          <span class="porcentaje">90%</span>
+        </div>
+
+        <div class="barra">
+          <div class="" id="bd"></div>
+        </div>
+      </div>
+      <div class="skill">
+        <div class="info">
+          <p><span class="lista"> </span>Photoshop</p>
+          <span class="porcentaje">85%</span>
+        </div>
+
+        <div class="barra">
+          <div class="" id="ps"></div>
+        </div>
+      </div>
+    </div> -->
+
+    <!-- SECCION S E R V I C I O S -->
+    <section id="servicios">
+      <h3 class="titulo-seccion">Seguros</h3>
+      <div class="fila">
+        <div class="servicio">
+          <span class="icono"> <i class="fa-solid fa-car"></i></span>
+          <h4>Automotor</h4>
+          <hr />
+          <ul class="servicios-tag">
+            <li>Asegurá tu auto y manejá tranquilo</li>
+
+          </ul>
+          <a href="https://wa.link/33pwhh">
+
+            <p>
+              ¡Cotiza ahora!
+            </p>
+          </a>
+        </div>
+        <div class="servicio">
+          <span class="icono"><i class="fa-solid fa-home"></i></span>
+          <h4>Hogar</h4>
+          <hr />
+          <ul class="servicios-tag">
+           <li>Tu casa siempre protegida</li>
+
+          </ul>
+          <a href="https://wa.link/dlnzfj">
+
+            <p>
+              ¡Cotiza ahora!
+            </p>
+          </a>
+        </div>
+        <div class="servicio">
+          <span class="icono"><i class="fa-solid fa-store"></i></span>
+          <h4>Comercio</h4>
+          <hr />
+          <ul class="servicios-tag">
+           <li>Asegura tu mercaderia y lugar de trabajo</li>
+
+          </ul>
+           <a href="https://wa.link/52zbn9h">
+
+            <p>
+              ¡Cotiza ahora!
+            </p>
+          </a>
+        </div>
+      </div>
+      <div class="fila">
+        <div class="servicio">
+          <span class="icono"><i class="fa-solid fa-person-burst"></i></span>
+          <h4>Accidentes personales</h4>
+          <hr />
+          <ul class="servicios-tag">
+             <li>Trabaja tranquilo, seguro prestacional</li>
+
+          </ul>
+           <a href="https://wa.link/0btp1v">
+
+            <p>
+              ¡Cotiza ahora!
+            </p>
+          </a>
+        </div>
+        <div class="servicio">
+          <span class="icono"><i class="fa-solid fa-person"></i></span>
+          <h4>Vida y retiro</h4>
+          <hr />
+          <ul class="servicios-tag">
+              <li>Planifica tus ahorros e inversiones</li>
+
+          </ul>
+           <a href="https://wa.link/xxpcfn">
+
+            <p>
+              ¡Cotiza ahora!
+            </p>
+          </a>
+        </div>
+        <div class="servicio">
+          <span class="icono"
+            ><i class="fa-solid fa-person-circle-question"></i
+          ></span>
+          <h4>Sepelio</h4>
+          <hr />
+          <ul class="servicios-tag">
+             <li>Cuando mas necesites, estamos junto a vos</li>
+
+          </ul>
+           <a href="https://wa.link/ubuq7c">
+
+            <p>
+              ¡Cotiza ahora!
+            </p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+
+
+    <section id="poliza">
+      <script defer data-widget-type="group" data-person="6747ee77-7e76-4c55-88d3-7755dd07096a" src="https://widget.tochat.be/bundle.js?key=8c7760e1-b095-44ca-b366-ce6d8d228ef6"></script><div id="whatapp-people-widget"></div></section>
+
+    <!-- SECCTION C O N T A C T O -->
+    <section id="contacto">
+      <h3 class="titulo-seccion">Contáctanos ahora</h3>
+      <div class="contenedor-form">
+        <form action="https://formsubmit.co/rponceseguros@hotmail.com"
+          method="POST">
+          <div class="fila mitad">
+            <input
+              type="text"
+              placeholder="Nombre Completo*"
+              class="input-mitad"
+            />
+            <input
+              type="email"
+              placeholder="Dirección de Email"
+              class="input-mitad"
+            />
+          </div>
+          <div class="fila">
+            <input type="text" placeholder="Asunto" class="input-full" />
+            
+          </div>
+          <div class="fila">
+            <textarea
+              name=""
+              id=""
+              cols="30"
+              rows="10"
+              placeholder="Tu Mensaje..."
+              class="input-full"
+            ></textarea>
+          </div>
+
+          <input type="submit" value="Enviar Mensaje" class="btn-enviar" />
+        </form>
+      </div>
+    </section>
+
+    <!-- SECCION FOOTER -->
+    <footer>
+     
+        <div class="atencion">
+
+          <a href="https://maps.app.goo.gl/qyrX59EVKXfdqHCf9"><p>Juan Gilberto Funes 616</p></i></a>
+          <p></p>
+          <a href="https://wa.link/vt4jqo"><i class="fa-brands fa-whatsapp"></i></a><p>2665021812</p>
+          <p></p>
+          <h2>Horarios de atención </h2>
+          <h4>Lunes a viernes: 9:00 a 18:00</h4>
+          <h4>Sabados: 9:30 a 13:00</h4>
+        </div>
+        
+      
+      
+      <p>Todos los derechos reservados - 2023</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
