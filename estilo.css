@@ -551,6 +551,7 @@ html {
   position: center;
   padding-top: 20px;
   margin: auto;
+  width: 100%;
 }
 /* *********************/
 /* seccion F O O T E R */
@@ -672,5 +673,9 @@ footer .atencion h4 {
   #contacto .contenedor-form .mitad input {
     width: 100%;
     margin-bottom: 15px;
+  }
+
+  #ubicacion .mapita {
+    width: 100%;
   }
 }
