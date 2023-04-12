@@ -530,6 +530,28 @@ html {
   background-color: #3373c7;
   color: #fff;
 }
+
+#ubicacion {
+  max-width: 1100px;
+  padding: 100px 0;
+  margin: auto;
+}
+
+#ubicacion .titulo-seccion {
+  text-align: center;
+  font-size: 22px;
+  text-transform: uppercase;
+  color: #111135;
+  text-decoration: underline;
+  text-decoration-color: #d3d3d3;
+  text-decoration-thickness: 5px;
+}
+
+#ubicacion .mapita {
+  position: center;
+  padding-top: 20px;
+  margin: auto;
+}
 /* *********************/
 /* seccion F O O T E R */
 /* *********************/
