@@ -43,12 +43,6 @@ html {
   color: #3373c7;
 }
 
-#inicio .contenido header .contenido-header img {
-  max-width: 5%;
-  max-height: 5%;
-  border: white;
-}
-
 #inicio .contenido header .contenedor-foto-logo {
   width: 10px;
   margin-right: 80px;
@@ -622,6 +616,11 @@ footer .atencion h4 {
     top: 48px;
     left: 0;
     padding: 10px 0;
+  }
+  #inicio .contenido header .contenido-header img {
+    width: 30px;
+    height: 30px;
+    /* object-fit: cover; */
   }
   nav.responsive ul {
     display: block !important;
